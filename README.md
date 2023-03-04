@@ -4,46 +4,49 @@ Improve access speed for github in mainland China
 
 ## Last github hosts
 
-Last update: 3/4/2023, 12:42:26 AM
+Last update: 3/4/2023, 3:16:41 AM
 
 ```
-140.82.114.25 alive.github.com
-140.82.112.6 api.github.com
+140.82.113.26 alive.github.com
+140.82.114.6 api.github.com
 185.199.108.153 assets-cdn.github.com
-185.199.108.133 avatars.githubusercontent.com
-185.199.108.133 avatars0.githubusercontent.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
 185.199.108.133 avatars1.githubusercontent.com
 185.199.108.133 avatars2.githubusercontent.com
 185.199.108.133 avatars3.githubusercontent.com
-185.199.108.133 avatars4.githubusercontent.com
+185.199.110.133 avatars4.githubusercontent.com
 185.199.108.133 avatars5.githubusercontent.com
 185.199.111.133 camo.githubusercontent.com
-140.82.114.22 central.github.com
+140.82.113.21 central.github.com
 185.199.108.133 cloud.githubusercontent.com
-140.82.114.10 codeload.github.com
-140.82.114.22 collector.github.com
+140.82.113.9 codeload.github.com
+140.82.112.22 collector.github.com
+34.120.54.55 deno.dev
 185.199.108.133 desktop.githubusercontent.com
 185.199.108.133 favicons.githubusercontent.com
-140.82.114.3 gist.github.com
-54.231.132.225 github-cloud.s3.amazonaws.com
-52.216.243.108 github-com.s3.amazonaws.com
-52.216.142.76 github-production-release-asset-2e65be.s3.amazonaws.com
-54.231.172.89 github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.217.72.124 github-production-user-asset-6210df.s3.amazonaws.com
+140.82.113.4 gist.github.com
+52.216.240.236 github-cloud.s3.amazonaws.com
+3.5.28.186 github-com.s3.amazonaws.com
+52.217.15.12 github-production-release-asset-2e65be.s3.amazonaws.com
+52.216.136.123 github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.216.49.73 github-production-user-asset-6210df.s3.amazonaws.com
 192.0.66.2 github.blog
-140.82.114.3 github.com
-140.82.112.17 github.community
+140.82.112.4 github.com
+140.82.113.18 github.community
 52.224.38.193 github.dev
-185.199.109.154 github.githubassets.com
+185.199.108.154 github.githubassets.com
 146.75.29.194 github.global.ssl.fastly.net
-185.199.108.153 github.io
+185.199.111.153 github.io
 185.199.108.133 github.map.fastly.net
 185.199.108.153 githubstatus.com
-140.82.113.25 live.github.com
+45.55.126.88 jsfiddle.net
+140.82.114.25 live.github.com
 185.199.108.133 media.githubusercontent.com
-185.199.109.133 objects.githubusercontent.com
+185.199.108.133 objects.githubusercontent.com
 13.107.42.16 pipelines.actions.githubusercontent.com
-185.199.108.133 raw.githubusercontent.com
-185.199.108.133 user-images.githubusercontent.com
-13.107.226.41 vscode.dev
+185.199.110.133 raw.githubusercontent.com
+104.21.234.231 rawcdn.githack.com
+185.199.110.133 user-images.githubusercontent.com
+13.107.253.40 vscode.dev
 ```
