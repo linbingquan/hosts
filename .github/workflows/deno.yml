@@ -1,0 +1,53 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will install Deno then run Deno lint and test.
+# For more information see: https://github.com/denoland/setup-deno
+
+name: Deno
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Runs at 00:00 UTC on Sunday
+    # https://crontab.guru/
+    - cron: "0 0 * * 0"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v3
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - run: |
+          deno --version
+      - run: |
+          deno run --allow-net --allow-read --allow-write mod.ts
+
+      - name: Formatting
+        run: deno fmt
+
+      - name: Commit files
+        run: |
+          git config --local user.email "695601626@qq.com"
+          git config --local user.name "linbingquan"
+          git add .
+          git commit -m "feat(deploy): workflow action for deploy"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
