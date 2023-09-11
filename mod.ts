@@ -35,6 +35,7 @@ const urls = [
   "github.map.fastly.net",
   "githubstatus.com",
   "jsfiddle.net",
+  "linbingquan.vercel.app",
   "live.github.com",
   "media.githubusercontent.com",
   "objects.githubusercontent.com",
