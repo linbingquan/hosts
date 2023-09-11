@@ -43,6 +43,7 @@ const urls = [
   "rawcdn.githack.com",
   "unpkg.com",
   "user-images.githubusercontent.com",
+  "vercel.app",
   "vscode.dev",
 ];
 
