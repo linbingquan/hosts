@@ -17,6 +17,8 @@ const urls = [
   "collector.github.com",
   "deno.dev",
   "desktop.githubusercontent.com",
+  "discord.com",
+  "discord.gg",
   "favicons.githubusercontent.com",
   "gist.github.com",
   "githack.com",
