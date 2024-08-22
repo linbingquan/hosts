@@ -46,6 +46,7 @@ const urls = [
   "pipelines.actions.githubusercontent.com",
   "raw.githubusercontent.com",
   "rawcdn.githack.com",
+  "registry.npmjs.org",
   "unpkg.com",
   "user-images.githubusercontent.com",
   "vercel.app",
