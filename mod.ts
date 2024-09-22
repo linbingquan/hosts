@@ -15,6 +15,7 @@ const urls = [
   "cloudflare.com",
   "codeload.github.com",
   "collector.github.com",
+  "deno.com",
   "deno.dev",
   "desktop.githubusercontent.com",
   "discord.com",
