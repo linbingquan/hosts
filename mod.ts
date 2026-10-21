@@ -1,3 +1,6 @@
+import dns from "node:dns/promises";
+import { writeFileSync } from "node:fs";
+
 const urls = [
   "alive.github.com",
   "api.github.com",
@@ -55,12 +58,21 @@ const urls = [
   "vscode.dev",
 ];
 
-const promises = urls.map(async (url) => {
-  const ips = await Deno.resolveDns(url, "A");
-  return { url, ip: ips?.[0] };
+interface Result {
+  url: string;
+  ip: string | null;
+}
+
+const promises = urls.map(async (url): Promise<Result> => {
+  try {
+    const ips = await dns.resolve4(url);
+    return { url, ip: ips[0] };
+  } catch {
+    return { url, ip: null };
+  }
 });
 
-const result = await Promise.all(promises);
+const result: Result[] = await Promise.all(promises);
 
 const hosts = result.map((o) => {
   return o.ip ? `${o.ip} ${o.url}` : `# ${o.url} ip error`;
@@ -79,6 +91,10 @@ ${hosts}
 \`\`\`
 `;
 
-const encoder = new TextEncoder();
-Deno.writeFileSync("hosts", encoder.encode(hosts));
-Deno.writeFileSync("README.md", encoder.encode(readme));
+if (result.every((o) => !o.ip)) {
+  console.error("all DNS lookups failed");
+  process.exit(1);
+}
+
+writeFileSync("hosts", hosts);
+writeFileSync("README.md", readme);

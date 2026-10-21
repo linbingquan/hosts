@@ -1,0 +1,13 @@
+{
+  "name": "github-hosts",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "mod.ts",
+  "scripts": {
+    "build": "node mod.ts",
+    "start": "node mod.ts"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=23.6.0"
+  }
+}
